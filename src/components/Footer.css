@@ -1,0 +1,31 @@
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+    opacity: 0.3;
+}
+
+footer::after {
+    content: '✨ Made with love and zero WordPress ✨';
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    opacity: 0.8;
+    font-style: italic;
+}

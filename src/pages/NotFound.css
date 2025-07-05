@@ -1,0 +1,67 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.not-found h1 {
+    font-size: 8em;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.not-found h1::after {
+    content: '🤷‍♂️';
+    position: absolute;
+    right: -80px;
+    top: 20px;
+    font-size: 0.3em;
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+.not-found h2 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.not-found p {
+    color: #5a6c7d;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.not-found a {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.not-found a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
